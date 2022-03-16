@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Bahianita&display=swap");
+body {
+  background: #B0BFD1;
+  margin: 0;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  font-family: 'Bahianita', cursive;
+}
+
+h1 {
+  font-size: 2.4rem;
+  white-space: nowrap;
+  margin-top: 0;
+  transform: translateX(-90px);
+  transition: transform .7s;
+}
+
+img {
+  width: 100%;
+}
+
+.my-atropos {
+  width: 320px;
+  height: 290px;
+  
+  background: white url("../img.jpg") no-repeat 100% -300px;
+}
+
+.atropos-scale, .atropos-rotate, .atropos-inner, .container {
+  overflow: visible;
+  position: relative;
+}
+
+.container {
+  padding: 2em;
+  
+}
+
+.container:before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  margin-left: -4em;
+  margin-top: -4em;
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+  transition: clip-path .3s;
+}
+.add-border.container:before {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+
+}
+
+footer {
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+footer a {
+  text-decoration: none;
+  background: #DAE3EE;
+  font-weight: bold;
+  color: #2B3F56;
+  display: inline-block;
+  text-align: center;
+  padding: .5em 1em;
+  border-radius: .3em;
+}
+
+footer svg {
+  transform: translateY(3px);
+  transform: translateY(3px);
+  margin-right: .2em;
+}
+
+footer .date {
+  color: #47586C;
+  font-size: .8rem;
+  text-align: right;
+}
+/*# sourceMappingURL=main.css.map */
